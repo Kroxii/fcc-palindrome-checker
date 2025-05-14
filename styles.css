@@ -1,0 +1,79 @@
+:root {
+  --background-color: #0a0a23;
+  --text-color: #ffffff;
+  --container-background-color: #ffffff;
+  --container-shadow-color: rgba(0, 0, 0, 0.1);
+  --button-background-color: #4a90e2;
+  --button-hover-background-color: #357ab8;
+  --button-text-color: #ffffff;
+  --input-border-color: #ccc;
+  --heading-color: #4a90e2;
+  --result-text-color: #333;
+  --background-image: url('images/palindrome-def.png'); /* Chemin de l'image */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--background-color) var(--background-image) no-repeat center center;
+  background-size: cover;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  background: var(--container-background-color);
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px var(--container-shadow-color);
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--heading-color);
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--input-border-color);
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--button-hover-background-color);
+}
+
+#result {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--result-text-color);
+}
